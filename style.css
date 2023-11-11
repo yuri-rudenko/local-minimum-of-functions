@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #ED213A; 
+    background: -webkit-linear-gradient(to right, #6b1e16, #ac1728); 
+    background: linear-gradient(to right, #6b1e16, #ac1728);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.content {
+    padding: 15px;
+    height: 70%;
+    border-radius: 30px;
+    width: 400px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4), -5px -5px 5px rgba(255, 255, 255, 0.3);
+}
+.content form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.content form input {
+    box-sizing: border-box;
+    font-size: 30px;
+    margin: 5px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 5px;
+}
+         
+.goldenSection {
+    width: 180px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    margin: 10px;
+    padding: 15px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+.goldenSection:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.intervalHalving {
+    width: 180px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #CC95C0 0%, #DBD4B4  51%, #CC95C0  100%);
+    margin: 10px;
+    padding: 15px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+.intervalHalving:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
