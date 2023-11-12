@@ -1,8 +1,6 @@
-export function goldenSectionFunc() {
+import { f } from "./f.js";
 
-  function f(x) {
-      return 1.3 * Math.pow(x, 2) - 10.4 * x + 13.55;
-    }
+export function goldenSectionFunc(a, b, epsilon) {
     
   function goldenSection(a, b, epsilon) {
       const phi = (1 + Math.sqrt(5)) / 2; // Золотий перетин
@@ -23,11 +21,6 @@ export function goldenSectionFunc() {
     
       return (a + b) / 2;
     }
-    
-    // Виклик функції для мінімізації
-    const a = 2; // Початковий інтервал
-    const b = 7; // Кінцевий інтервал
-    const epsilon = 0.001; // Точність
     
     const minPoint = goldenSection(a, b, epsilon);
     const minValue = f(minPoint);

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 body {
@@ -26,7 +27,11 @@ body {
 .content form {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+.content form h1 {
+    margin-bottom: 10px;
 }
 .content form input {
     box-sizing: border-box;
@@ -83,4 +88,11 @@ body {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
+}
+
+
+
+.results {
+    color: rgb(17, 0, 255);
+    font-weight: normal;
 }

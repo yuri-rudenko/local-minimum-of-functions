@@ -1,8 +1,6 @@
-export function intervalHalvingFunc() {
+import { f } from "./f.js";
 
-  function f(x) {
-    return 1.3 * Math.pow(x, 2) - 10.4 * x + 13.55;
-  }
+export function intervalHalvingFunc(a, b, epsilon) {
 
   function dichotomy(a, b, epsilon) {
     const delta = epsilon / 2;
@@ -20,10 +18,6 @@ export function intervalHalvingFunc() {
 
     return (a + b) / 2;
   }
-
-  const a = 2; // Початковий інтервал
-  const b = 7; // Кінцевий інтервал
-  const epsilon = 0.001; // Точність
 
   const minPoint = dichotomy(a, b, epsilon);
   const minValue = f(minPoint);
