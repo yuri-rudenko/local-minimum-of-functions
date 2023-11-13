@@ -18,6 +18,9 @@ body {
 .content {
     padding: 15px;
     height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 30px;
     width: 400px;
     border: 2px solid white;
@@ -42,7 +45,7 @@ body {
     padding: 5px;
 }
          
-.goldenSection {
+.goldenSection, .linearInterpolation {
     width: 180px;
     box-sizing: border-box;
     background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
@@ -60,7 +63,7 @@ body {
     font-weight: bold;
   }
 
-.goldenSection:hover {
+.goldenSection:hover, .linearInterpolation:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
@@ -90,9 +93,14 @@ body {
     text-decoration: none;
 }
 
-
-
+.buttons {
+    display: flex;
+}
 .results {
     color: rgb(17, 0, 255);
+    font-weight: normal;
+}
+.time {
+    color: rgb(9, 255, 0);
     font-weight: normal;
 }

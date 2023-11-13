@@ -1,4 +1,5 @@
 import { f } from "./f.js";
+import { setTime } from "./setTime.js";
 
 export function goldenSectionFunc(a, b, epsilon) {
     
@@ -21,11 +22,19 @@ export function goldenSectionFunc(a, b, epsilon) {
     
       return (a + b) / 2;
     }
+
+    const totalTimeStart = performance.now();
+
+    let minPoint
     
-    const minPoint = goldenSection(a, b, epsilon);
+    for(let i = 0; i< 500000; i++) minPoint = goldenSection(a, b, epsilon);
     const minValue = f(minPoint);
     
     console.log(`Мінімум функції знаходиться в точці x = ${minPoint.toFixed(4)}, y = ${minValue.toFixed(4)}`);
     
+    const totalTime = performance.now() - totalTimeStart;
+    console.log(`Загальний час виконання: ${totalTime} мс`);
+    setTime(totalTime.toFixed(10) + ' мс');
+
     return(`x = ${minPoint.toFixed(4)}, y = ${minValue.toFixed(4)}`)
 }
